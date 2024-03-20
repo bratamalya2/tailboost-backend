@@ -9,7 +9,16 @@ const app = express();
 
 dotenv.config();
 
-app.use(cors());
+app.use(cors({
+    origin: '*',
+    methods: [
+        'GET',
+        'POST',
+    ],
+    allowedHeaders: [
+        'Content-Type',
+    ]
+}));
 app.use('/posts', posts);
 app.use('/users', users);
 
