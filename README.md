@@ -7,6 +7,7 @@
 5. Add the following lines to that file:
 
     PORT = 3005
+   
     API_ROUTE = https://jsonplaceholder.typicode.com
-6. Run the server by: "npm run start"
-7. The server is listening on port 3005.
+7. Run the server by: "npm run start"
+8. The server is listening on port 3005.
